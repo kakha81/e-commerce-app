@@ -36,7 +36,7 @@ function LoginScreen() {
             w='100%'
             color={Colors.main}
             bg={Colors.white}
-            borderRadius='10'
+            borderRadius='15'
             borderBottomColor={Colors.underline}
           />
         </VStack>
