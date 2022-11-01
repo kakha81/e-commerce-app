@@ -8,7 +8,7 @@ function HomeSearch() {
     <HStack
       space={5}
       w='full'
-      px={6}
+      px={3}
       bg={Colors.main}
       py={4}
       alignItems='center'
@@ -17,7 +17,7 @@ function HomeSearch() {
       <Input
         placeholder='Nike, Puma, Adidas ...'
         w='85%'
-        color={Colors.white}
+        color={Colors.black}
         bg={Colors.white}
         fontSize={20}
         type='search'
