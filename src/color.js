@@ -1,5 +1,5 @@
 const Colors = {
-  main: "#488600",
+  main: "#3B75F1",
   white: "#FFFFFF",
   black: "#000000",
   lightblack: "#BCBCBC",
@@ -9,7 +9,8 @@ const Colors = {
   subGreen: "#EEFAE6",
   deepGreen: "#E1F0D7",
   deepestGray: "#C4C4C4",
-  blue: "#3B87F9",
+  blue: "#3B75F1",
+  dodgerBlue: "dodgerblue",
   underline: "#E5E5E5",
   paypal: "#FFB730",
 };

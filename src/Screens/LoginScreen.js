@@ -1,8 +1,17 @@
-import { Box, Heading, Image, Input, Text, View, VStack } from "native-base";
+import {
+  Box,
+  Button,
+  Heading,
+  Image,
+  Input,
+  Text,
+  View,
+  VStack,
+} from "native-base";
 
 import React from "react";
 import Colors from "../color";
-import { MaterialIcons } from "@expo/vector-icons";
+import { MaterialIcons, Ionicons } from "@expo/vector-icons";
 
 function LoginScreen() {
   return (
@@ -20,26 +29,70 @@ function LoginScreen() {
         h='full'
         position='absolute'
         top='0'
-        px='60'
-        pb='30'
+        px='5'
+        pb='10'
         justifyContent='flex-end'
       >
-        <Heading>LOGIN</Heading>
+        <Heading>LOG IN</Heading>
         <VStack space={5} pt='6'>
+          {/* EMAIL */}
           <Input
             InputLeftElement={
-              <MaterialIcons name='email' size={26} color={Colors.main} />
+              <MaterialIcons name='email' size={25} color={Colors.main} />
             }
             variant='underlined'
-            fontSize='16px'
+            fontSize='12px'
             placeholder='user@gmail.com'
+            pl={2}
             w='100%'
             color={Colors.main}
             bg={Colors.white}
-            borderRadius='15'
+            rounded={50}
+            borderBottomColor={Colors.underline}
+          />
+          {/* PASSWORD */}
+          <Input
+            InputLeftElement={
+              <Ionicons name='eye' size={24} color={Colors.main} />
+            }
+            variant='underlined'
+            fontSize='16px'
+            placeholder='********'
+            pl={2}
+            w='100%'
+            type='password'
+            color={Colors.main}
+            bg={Colors.white}
+            rounded={50}
             borderBottomColor={Colors.underline}
           />
         </VStack>
+        <Button
+          _pressed={{
+            bg: Colors.blue,
+          }}
+          my={30}
+          w='60%'
+          h='7%'
+          alignSelf='center'
+          rounded={50}
+          bg={Colors.main}
+        >
+          LOGIN
+        </Button>
+        <Button
+          _pressed={{
+            bg: Colors.blue,
+          }}
+          my={30}
+          w='60%'
+          h='7%'
+          alignSelf='center'
+          rounded={50}
+          bg={Colors.main}
+        >
+          SIGNUP
+        </Button>
       </Box>
     </Box>
   );
