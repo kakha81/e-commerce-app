@@ -13,14 +13,16 @@ import Rating from "../components/Rating";
 import NumericInput from "react-native-numeric-input";
 import Buttone from "../components/Buttone";
 import Review from "../components/Review";
+import products from "../data/Product";
 
 function SingleProductScreen() {
   const [value, setValue] = useState(0);
+
   return (
     <Box safeArea flex={1} bg={Colors.white}>
       <ScrollView px={5} showsVerticalScrollIndicator={false}>
         <Image
-          source={require("../../assets/images/1.png")}
+          source={require("../../assets/images/2.png")}
           alt='Image'
           w='full'
           h={300}
@@ -46,7 +48,7 @@ function SingleProductScreen() {
           />
           <Spacer />
           <Heading bold color={Colors.black} fontSize={19}>
-            $400
+            ${products[1].price}
           </Heading>
         </HStack>
         <Text lineHeight={24} fontSize={12}>

@@ -5,7 +5,7 @@ const products = [
     image: require("./../../assets/images/1.png"),
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-    price: "89",
+    price: 89,
     countInStock: 3,
     rating: 4.5,
     numReviews: 4,
@@ -16,7 +16,7 @@ const products = [
     image: require("./../../assets/images/2.png"),
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-    price: "100",
+    price: 20,
     countInStock: 5,
     rating: 2.5,
     numReviews: 6,
@@ -27,7 +27,7 @@ const products = [
     image: require("./../../assets/images/3.png"),
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-    price: "150",
+    price: 150,
     countInStock: 7,
     rating: 1,
     numReviews: 1,
@@ -38,7 +38,7 @@ const products = [
     image: require("./../../assets/images/4.png"),
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-    price: "200",
+    price: 200,
     countInStock: 2,
     rating: 3,
     numReviews: 9,
@@ -49,7 +49,7 @@ const products = [
     image: require("./../../assets/images/5.png"),
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-    price: "20",
+    price: 20,
     countInStock: 4,
     rating: 2,
     numReviews: 4,
@@ -60,7 +60,7 @@ const products = [
     image: require("./../../assets/images/6.png"),
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-    price: "30",
+    price: 30,
     countInStock: 7,
     rating: 4,
     numReviews: 1,
@@ -71,7 +71,7 @@ const products = [
     image: require("./../../assets/images/7.png"),
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-    price: "25",
+    price: 25,
     countInStock: 3,
     rating: 3,
     numReviews: 2,
@@ -82,7 +82,7 @@ const products = [
     image: require("./../../assets/images/8.png"),
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-    price: "15",
+    price: 15,
     countInStock: 10,
     rating: 4,
     numReviews: 3,
@@ -93,7 +93,7 @@ const products = [
     image: require("./../../assets/images/9.png"),
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-    price: "10",
+    price: 10,
     countInStock: 3,
     rating: 5,
     numReviews: 4,
@@ -104,7 +104,7 @@ const products = [
     image: require("./../../assets/images/10.png"),
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-    price: "70",
+    price: 70,
     countInStock: 6,
     rating: 4,
     numReviews: 7,
