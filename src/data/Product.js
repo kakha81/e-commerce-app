@@ -7,7 +7,7 @@ const products = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     price: "89",
     countInStock: 3,
-    rating: 4,
+    rating: 4.5,
     numReviews: 4,
   },
   {
@@ -18,7 +18,7 @@ const products = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     price: "100",
     countInStock: 5,
-    rating: 2,
+    rating: 2.5,
     numReviews: 6,
   },
   {
@@ -100,7 +100,7 @@ const products = [
   },
   {
     _id: "10",
-    name: "shoe_0010",
+    name: "shoe_010",
     image: require("./../../assets/images/10.png"),
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
@@ -110,3 +110,5 @@ const products = [
     numReviews: 7,
   },
 ];
+
+export default products;

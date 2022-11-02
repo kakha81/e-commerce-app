@@ -17,10 +17,11 @@ function HomeSearch() {
       <Input
         placeholder='Nike, Puma, Adidas ...'
         w='85%'
-        color={Colors.white}
+        color={Colors.black}
         bg={Colors.white}
         fontSize={20}
         type='search'
+        variant='filled'
         h={12}
         borderWidth={0}
         _focus={{
