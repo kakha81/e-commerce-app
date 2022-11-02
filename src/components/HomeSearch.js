@@ -8,7 +8,7 @@ function HomeSearch() {
     <HStack
       space={5}
       w='full'
-      px={6}
+      px={3}
       bg={Colors.main}
       py={4}
       alignItems='center'
