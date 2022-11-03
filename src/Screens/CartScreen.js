@@ -1,8 +1,8 @@
-import { Box, Center, ScrollView, Text, View } from "native-base";
+import { Box, Center, Text } from "native-base";
 import React from "react";
-import { Colors } from "react-native/Libraries/NewAppScreen";
-import CartEmpty from "../components/CartEmpty";
-import CartItems from "../components/CartItems";
+import Colors from "../color";
+
+import CartIterms from "../components/CartIterms";
 
 function CartScreen() {
   return (
@@ -15,9 +15,9 @@ function CartScreen() {
       {/* IF CART IS EMPTY */}
       {/* <CartEmpty /> */}
       {/* CART ITEMS */}
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <CartItems />
-      </ScrollView>
+      <Box showsVerticalScrollIndicator={false}>
+        <CartIterms />
+      </Box>
     </Box>
   );
 }
