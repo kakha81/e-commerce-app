@@ -1,10 +1,10 @@
 import { NativeBaseProvider } from "native-base";
-import CartScreen from "./src/Screens/CartScreen";
+import SingleProductScreen from "./src/Screens/SingleProductScreen";
 
 export default function App() {
   return (
     <NativeBaseProvider>
-      <CartScreen />
+      <SingleProductScreen />
     </NativeBaseProvider>
   );
 }

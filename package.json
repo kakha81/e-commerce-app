@@ -13,7 +13,7 @@
     "@react-navigation/bottom-tabs": "^6.4.0",
     "@react-navigation/native": "^6.0.13",
     "@react-navigation/native-stack": "^6.9.1",
-    "expo": "~46.0.16",
+    "expo": "^46.0.16",
     "expo-status-bar": "~1.4.0",
     "native-base": "^3.4.20",
     "react": "18.0.0",
@@ -31,5 +31,16 @@
   "devDependencies": {
     "@babel/core": "^7.12.9"
   },
-  "private": true
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kakha81/e-commerce-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kakha81/e-commerce-app/issues"
+  },
+  "homepage": "https://github.com/kakha81/e-commerce-app#readme",
+  "description": ""
 }
