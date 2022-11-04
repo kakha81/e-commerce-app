@@ -20,14 +20,14 @@ const Swiper = () => (
     previewRowKey='0'
     previewOpenValue={-40}
     previewOpenDelay={3000}
-    data={products.slice(0, 9)}
-    renderItem={renderIterm}
-    renderHiddenItem={hiddenIterm}
+    data={products.slice(0, 2)}
+    renderItem={renderItem}
+    renderHiddenItem={hiddenItem}
     showVerticalScrollIndicator={false}
   />
   // Cart Item
 );
-const renderIterm = (data) => (
+const renderItem = (data) => (
   <Pressable>
     <Box ml={3} mb={3}>
       <HStack
@@ -69,7 +69,7 @@ const renderIterm = (data) => (
 );
 // Hidden
 
-const hiddenIterm = () => (
+const hiddenItem = () => (
   <Pressable
     w={50}
     roundedTopRight={10}
@@ -85,11 +85,11 @@ const hiddenIterm = () => (
   </Pressable>
 );
 
-const CartIterms = () => {
+const CartItems = () => {
   return (
     <Box mr={2}>
       <Swiper />
     </Box>
   );
 };
-export default CartIterms;
+export default CartItems;
