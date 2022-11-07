@@ -1,10 +1,10 @@
 import { NativeBaseProvider } from "native-base";
-import PlaceOrderScreen from "./src/Screens/PlaceOrderScreen";
+import OrderScreen from "./src/Screens/OrderScreen";
 
 export default function App() {
   return (
     <NativeBaseProvider>
-      <PlaceOrderScreen />
+      <OrderScreen />
     </NativeBaseProvider>
   );
 }
