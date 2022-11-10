@@ -12,7 +12,7 @@ const Colors = {
   blue: "#3B75F1",
   dodgerBlue: "dodgerblue",
   underline: "#E5E5E5",
-  paypal: "#FFB730",
+  bankOfGeorgia: "#FFB730",
 };
 
 export default Colors;

@@ -1,8 +1,17 @@
 import React, { useState } from "react";
-import { Button, Center, HStack, Modal, Text, VStack } from "native-base";
+import { useNavigation } from "@react-navigation/native";
+import {
+  Button,
+  Center,
+  HStack,
+  Image,
+  Modal,
+  Pressable,
+  Text,
+  VStack,
+} from "native-base";
 import Buttone from "../components/Buttone";
 import Colors from "../color";
-import { useNavigation } from "@react-navigation/native";
 
 const OrdersInfos = [
   {
@@ -27,18 +36,19 @@ const OrdersInfos = [
   },
 ];
 
-const PlaceOrderModel = () => {
+const OrderModel = () => {
   const navigation = useNavigation();
+
   const [showModel, setShowModel] = useState(false);
   return (
     <Center>
       <Buttone
         onPress={() => setShowModel(true)}
-        bg={Colors.black}
+        bg={Colors.main}
         color={Colors.white}
         mt={5}
       >
-        SHOW TOTAL
+        SHOW PAYMENT & TOTAL
       </Buttone>
       <Modal isOpen={showModel} onClose={() => setShowModel(false)} size='lg'>
         <Modal.Content maxWidth={350}>
@@ -61,18 +71,37 @@ const PlaceOrderModel = () => {
             </VStack>
           </Modal.Body>
           <Modal.Footer>
+            <Pressable
+              w='full'
+              justifyContent='center'
+              bg={Colors.white}
+              h={45}
+              rounded={3}
+              overflow='hidden'
+              onPress={() => setShowModel(false)}
+            >
+              <Image
+                source={require("../../assets/BankOfGergia.jpg")}
+                alt='Bank Of Georgia'
+                resizeMode='contain'
+                w='full'
+                h={60}
+              />
+            </Pressable>
             <Button
-              flex={1}
+              w='full'
+              mt={4}
               bg={Colors.main}
               h={45}
               _text={{ color: Colors.white }}
+              _pressed={{ color: Colors.dodgerBlue }}
               onPress={() => {
-                navigation.navigate("order");
+                navigation.navigate("Home");
                 setShowModel(false);
               }}
-              _pressed={{ bg: Colors.red }}
+              _pressed={{ bg: Colors.black }}
             >
-              PLACE AN ORDER
+              PAY LATER
             </Button>
           </Modal.Footer>
         </Modal.Content>
@@ -81,4 +110,4 @@ const PlaceOrderModel = () => {
   );
 };
 
-export default PlaceOrderModel;
+export default OrderModel;

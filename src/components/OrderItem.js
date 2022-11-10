@@ -42,13 +42,13 @@ const OrderItem = () => {
                   {item.name}
                 </Text>
                 <Text color={Colors.lightBlack} mt={2} bold>
-                  ${item.price}
+                  {item.price} ₾
                 </Text>
               </VStack>
               <Center>
                 <Button
                   bg={Colors.main}
-                  _pressed={{ bg: Colors.main }}
+                  _pressed={{ bg: Colors.dodgerBlue }}
                   _text={{ color: Colors.white }}
                 >
                   1

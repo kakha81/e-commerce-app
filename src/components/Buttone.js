@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "native-base";
+import Colors from "../color";
 
 function Buttone({ mt, bg, color, children, onPress }) {
   return (
@@ -13,7 +14,7 @@ function Buttone({ mt, bg, color, children, onPress }) {
         color: color,
         fontWeight: "bold",
       }}
-      _pressed={{ bg: bg }}
+      _pressed={{ bg: Colors.red }}
       onPress={onPress}
     >
       {children}
