@@ -15,7 +15,7 @@ import { useNavigation } from "@react-navigation/native";
 
 const paymentMethods = [
   {
-    image: require("../../assets/BankOfGergia.jpg"),
+    image: require("../../assets/BankOfGeorgia.jpg"),
     alt: "Bank of Georgia",
     icon: "Ionicons",
   },
