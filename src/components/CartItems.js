@@ -20,7 +20,7 @@ const Swiper = () => (
     previewRowKey='0'
     previewOpenValue={-40}
     previewOpenDelay={3000}
-    data={products.slice(0, 2)}
+    data={products.slice(0, 4)}
     renderItem={renderItem}
     renderHiddenItem={hiddenItem}
     showVerticalScrollIndicator={false}

@@ -81,7 +81,7 @@ const OrderModel = () => {
               onPress={() => setShowModel(false)}
             >
               <Image
-                source={require("../../assets/BankOfGergia.jpg")}
+                source={require("../../assets/BankOfGeorgia.jpg")}
                 alt='Bank Of Georgia'
                 resizeMode='contain'
                 w='full'
@@ -94,12 +94,11 @@ const OrderModel = () => {
               bg={Colors.main}
               h={45}
               _text={{ color: Colors.white }}
-              _pressed={{ color: Colors.dodgerBlue }}
+              _pressed={{ color: Colors.dodgerBlue, bg: Colors.black }}
               onPress={() => {
                 navigation.navigate("Home");
                 setShowModel(false);
               }}
-              _pressed={{ bg: Colors.black }}
             >
               PAY LATER
             </Button>
