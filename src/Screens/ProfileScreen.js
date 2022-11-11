@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Text } from "native-base";
+import { Center, Heading, Text } from "native-base";
 import React from "react";
 import Colors from "../color";
 import { SimpleLineIcons } from "@expo/vector-icons";

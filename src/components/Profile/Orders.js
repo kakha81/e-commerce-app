@@ -2,7 +2,6 @@ import { Box, Button, HStack, ScrollView, Text } from "native-base";
 import React from "react";
 import { Pressable } from "react-native";
 import Colors from "../../color";
-
 const Orders = () => {
   return (
     <Box h='full' bg={Colors.white} pt={5}>
@@ -70,5 +69,4 @@ const Orders = () => {
     </Box>
   );
 };
-
 export default Orders;
